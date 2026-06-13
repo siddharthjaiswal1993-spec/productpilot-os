@@ -168,6 +168,16 @@ Every document is written to meet the standard of a Series A investor review, an
 
 ---
 
+## What I Built
+
+| Artifact | Description |
+|---|---|
+| 19-section strategy repository | Complete product strategy from vision through investor narrative — 100+ docs, 20+ Mermaid diagrams, 5 structured templates, 10 persona docs, 10 agent specs |
+| Prototype specs | Full UX spec, screen designs, and Lovable/Bolt prompts in `15-Prototype/` |
+| Standard portfolio docs | PORTFOLIO_AUDIT, PRODUCT_THESIS, WHAT_I_BUILT, OUTCOME_MODEL, AI_PRODUCT_JUDGMENT |
+
+---
+
 *This repository is the complete blueprint for a venture-scale AI-native product intelligence company.*
 
 *ProductPilot OS — From signal collapse to evidence-backed decisions.*

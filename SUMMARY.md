@@ -108,15 +108,15 @@ This repository contains the complete product, strategy, architecture, and go-to
 
 ---
 
-## How to Use This Repository as a Portfolio Artifact
+## What This Repository Demonstrates
 
-**As a PM portfolio piece:** Demonstrates the full range of PM competencies — problem framing, user research synthesis, requirements writing, metrics design, roadmap planning, and cross-functional communication — in a single, coherent artifact.
+**Product strategy depth:** Problem framing, user research synthesis, requirements writing, metrics design, roadmap planning, and cross-functional communication — across 19 sections in a single coherent artifact.
 
-**As a technical PM portfolio piece:** The AI architecture, RAG specification, evaluation framework, and governance sections demonstrate the technical depth required for Staff PM and above at AI companies.
+**AI-native product design:** AI architecture, RAG specification, evaluation framework, and governance sections covering the full technical and product surface of an AI-native B2B SaaS platform.
 
-**As a founder pitch artifact:** The investor narrative, category creation documents, and market analysis form the backbone of a seed or Series A pitch.
+**Category creation thinking:** The investor narrative, category creation documents, and market analysis articulate why the product intelligence category is forming now and why a purpose-built platform wins.
 
-**As a product design reference:** The persona documents, user journey maps, and prototype specifications provide a complete design brief that a product design team could begin work from immediately.
+**Complete design brief:** The persona documents, user journey maps, and prototype specifications provide a complete brief that a product design team could begin work from immediately.
 
 ---
 

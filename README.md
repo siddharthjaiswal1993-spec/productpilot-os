@@ -1,8 +1,10 @@
 # ProductPilot OS
 
-**AI-Native Product Intelligence & Decision Operating System**
+**Product signal intelligence — from fragmented inputs to evidence-backed roadmap decisions**
 
-> ProductPilot OS is the AI-native intelligence layer that transforms fragmented product signals into evidence-backed decisions, prioritized roadmaps, and stakeholder alignment.
+**Status:** Concept · Full product strategy, architecture, and agent specs — prototype specs included, no running prototype
+
+> Connects Slack threads, Jira tickets, CRM notes, support escalations, call transcripts, and analytics into a unified reasoning engine. Every claim cited to source, author, date, and excerpt. Uses synthetic examples and mock data throughout.
 
 ---
 
@@ -168,6 +170,18 @@ Every document is written to meet the standard of a Series A investor review, an
 
 ---
 
+## Build / Maintain / Improve / Kill
+
+**Build** — Real Slack/Jira/CRM connectors and a knowledge graph that persists cross-signal relationships across sessions. The citation model only creates durable value when the underlying data is live.
+
+**Maintain** — The citation model: every factual claim must be traceable to source, author, date, and excerpt. This is non-negotiable. A product that generates ungrounded PRD content is a liability, not an asset.
+
+**Improve** — Confidence scoring calibration. The current model assigns confidence illustratively. A production system needs a methodology that reflects actual evidence coverage, source reliability, and cross-source corroboration — and a feedback loop that updates it when decisions turn out to be wrong.
+
+**Kill** — Any feature that generates PRD content without first grounding it in cited customer evidence. AI-generated product requirements without source grounding are the most dangerous output the product could produce — they look authoritative while encoding no real signal.
+
+---
+
 ## What I Built
 
 | Artifact | Description |
@@ -178,6 +192,6 @@ Every document is written to meet the standard of a Series A investor review, an
 
 ---
 
-*This repository is the complete blueprint for a venture-scale AI-native product intelligence company.*
+*Independent product exploration. Uses synthetic examples, mock data, and public category-level assumptions. Not affiliated with any company or proprietary roadmap.*
 
 *ProductPilot OS — From signal collapse to evidence-backed decisions.*

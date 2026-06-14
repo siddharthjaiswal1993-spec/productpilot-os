@@ -1,57 +1,51 @@
 # What I Built — ProductPilot OS
 
+This is the flagship project in my portfolio. I wrote every document here from first principles — no templates, no generated boilerplate. The 19 sections represent a complete product lifecycle from problem framing to investor narrative, written as if I were leading the product at a funded startup.
+
 ---
 
-## Repository Structure (19 Numbered Sections)
+## What I Actually Did
 
-| Section | Contents |
+**I defined the problem from scratch.** The "product signal collapse" framing — the idea that the core PM crisis is not a tooling problem but a reasoning and evidence problem — is my own analysis. I wrote the problem space (Section 03) to build a precise diagnosis before proposing a solution, the same way I'd approach a discovery brief.
+
+**I designed a multi-agent architecture for a product I know deeply.** Having spent 9 years working in enterprise B2B SaaS across workflow, governance, and integrations, I know where the evidence actually lives (CRM notes, Slack threads, Jira, support tickets, call transcripts) and what PMs actually need to do with it (write PRDs, score priorities, update stakeholders). I designed 8 specialised agents — not a single general-purpose one — because I knew each output type requires a different signal input set and a different quality bar.
+
+**I wrote the evaluation framework myself.** Section 12 defines how each agent's output is measured: human acceptance rate, citation quality, output freshness, and a composite trust score. I wrote this because I believe evaluation is a PM responsibility, not something to delegate to an ML team after launch.
+
+**I designed the RAG architecture as a product bet, not just a technical choice.** The decision to use a knowledge graph (Features, Customers, Signals, Decisions, Outcomes) over fine-tuning is a product strategy decision: a compounding organisational memory creates a defensible moat; a fine-tuned model is a one-time improvement. That reasoning is documented in Section 11.
+
+**I wrote the governance layer.** Section 13 covers PII handling, audit log design, permission model, and the human-in-the-loop approval gates. In enterprise AI, the governance model is part of the product. I did not treat it as a compliance appendix.
+
+---
+
+## The Scope
+
+| Area | What I wrote |
 |---|---|
-| `01-Vision/` | Vision, mission, product thesis, why-now analysis, category narrative |
-| `02-Market-Research/` | Competitive landscape, market trends, category creation thesis, comparable companies |
-| `03-Problem-Space/` | Signal collapse, prioritisation crisis, context-switching tax, decision debt |
-| `04-Product-Strategy/` | Full strategy, north star, principles, product bets, metrics, positioning, business model |
-| `05-Personas/` | 10 detailed persona documents with JTBD, pain points, and workflow maps |
-| `06-User-Journeys/` | 7 end-to-end journey maps with agent reasoning steps and before/after time comparisons |
-| `07-Opportunity-Briefs/` | Templates and worked examples for opportunity, evidence, risk, and prioritisation briefs |
-| `08-Product-Requirements/` | Full PRD, MVP scope, functional/non-functional requirements, acceptance criteria |
-| `09-Agent-System/` | Detailed spec for all 8 agents plus orchestration and workflow coordination |
-| `10-AI-Architecture/` | AI strategy, agentic architecture, reasoning/decision/confidence/trust layer design |
-| `11-RAG-Architecture/` | Full RAG pipeline: data sources, chunking, embedding, retrieval, re-ranking, knowledge graph |
-| `12-Evaluation-Framework/` | Eval stack, online/human/LLM-as-judge evals, golden dataset design, trust score model |
-| `13-Risk-Governance/` | Responsible AI, PII handling, security model, compliance framework, audit log design |
-| `14-Roadmap/` | V1 MVP through V3 agentic product organisation and long-term vision |
-| `15-Prototype/` | UX principles, page structure, screen specs, Lovable and Bolt prototype prompts |
-| `16-GTM/` | ICP definition, positioning, messaging, pricing, launch strategy, sales motion, competitive battlecards |
-| `17-Investor-Narrative/` | Why-now, market opportunity, category creation, product moat, investor memo |
-| `18-Technical-Architecture/` | System architecture, integrations (Slack, Jira, CRM, Support, Analytics), API design |
-| `19-Future-Vision/` | Product OS vision, autonomous PM, multi-agent product team, enterprise intelligence |
+| Problem + vision | Signal collapse diagnosis, why-now analysis, category narrative, mission |
+| Market | Competitive landscape, market trends, comparable companies, category creation thesis |
+| Strategy | North star, product bets, pricing model, positioning, business model |
+| Users | 10 persona documents — each with JTBD, workflow map, pain points, and agent interaction design |
+| Journeys | 7 end-to-end journey maps showing agent reasoning steps and before/after time comparisons |
+| Requirements | Full PRD, MVP scope, functional/non-functional requirements, acceptance criteria, user stories |
+| AI architecture | Agent specs (all 8), orchestration design, reasoning layer, confidence model, trust score |
+| RAG | Full pipeline: chunking strategy, embedding approach, retrieval + re-ranking, knowledge graph schema |
+| Evals | Eval stack, online/human/LLM-as-judge rubrics, golden dataset design, hallucination checks |
+| Governance | Responsible AI, PII, security model, audit logs, RBAC, compliance framework |
+| Roadmap | V1 PM Copilot → V2 Team Intelligence → V3 Agentic Product Org |
+| GTM | ICP, positioning, messaging, pricing tiers, launch strategy, sales motion, competitive battlecards |
+| Investor narrative | Why-now, market opportunity, category creation thesis, product moat, investor memo |
+| Technical architecture | System design, integrations (Slack, Jira, CRM, Support, Analytics, Billing), API design |
+| Future vision | Product OS, autonomous PM, multi-agent product team |
 
 ---
 
-## Standard Portfolio Documents
+## The Decisions I'm Most Confident In
 
-| File | Contents |
-|---|---|
-| `PORTFOLIO_AUDIT.md` | Honest evaluation of completeness, strengths, and what's missing |
-| `PRODUCT_THESIS.md` | The core bet, problem framing, and strategic rationale |
-| `WHAT_I_BUILT.md` | This file |
-| `OUTCOME_MODEL.md` | Business outcomes, success metrics, and how value is measured |
-| `AI_PRODUCT_JUDGMENT.md` | AI-specific product decisions and the reasoning behind them |
+**Evidence-first output model** — Every agent output must cite the specific source document, author, date, and excerpt that supports it. No citations means no output surfaced to the user. I made this a hard product requirement because in a PM context, an uncited recommendation is just noise. This is documented in Section 12.
 
----
+**8 narrow agents instead of one broad one** — Each agent has a defined signal input set, a defined output type, and a dedicated evaluation rubric. A general-purpose "intelligence agent" would have unclear quality criteria and no ownership model. Narrower agents are evaluable; broad agents are not.
 
-## Prototype
+**RAG over fine-tuning** — The knowledge graph compounds with every interaction; a fine-tuned model does not. The architecture bet is documented in Section 11 with explicit reasoning about what each approach can and cannot do.
 
-Built with Lovable (primary) and Bolt (secondary). Demonstrates the Signal Intelligence Hub, Opportunity Brief generation, and stakeholder update workflows.
-
----
-
-## Key Design Decisions Encoded in the Docs
-
-**Evidence-first output model** — every agent output must cite the specific source document, author, date, and excerpt that supports it. No citations = no output to users. This is a hard product requirement documented in Section 12.
-
-**8 specialised agents, not one** — Sales, CS, Support, Meeting Intelligence, PRD, Risk, Roadmap Intelligence, and Executive Summary agents each have a defined signal input set, a defined output type, and a dedicated evaluation rubric.
-
-**RAG over fine-tuning as the architecture bet** — the knowledge graph (Features, Customers, Signals, Decisions, Outcomes) compounds with every interaction. Fine-tuning a model on historical data is a one-time improvement; a growing knowledge graph is a compounding advantage.
-
-**Trust score per agent** — the evaluation framework defines a composite trust score for each agent based on human acceptance rate, citation quality, and output freshness. Autonomy decisions are gated on trust score thresholds.
+**Trust score gates autonomy** — The evaluation framework produces a per-agent composite trust score. Agents below threshold get human review; agents above threshold can take approved actions. This is not a binary human-in-the-loop/autonomous choice — it is a graduated model based on measured reliability.

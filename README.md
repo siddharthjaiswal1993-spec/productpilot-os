@@ -8,6 +8,22 @@
 
 ---
 
+## Start Here
+
+If you want to understand what this project is and why it exists, start with these five documents at the root:
+
+| Document | What it answers |
+|---|---|
+| [`PRODUCT_THESIS.md`](./PRODUCT_THESIS.md) | What problem this solves and why I built it |
+| [`WHAT_I_BUILT.md`](./WHAT_I_BUILT.md) | What I actually designed and wrote, and the decisions I made |
+| [`AI_PRODUCT_JUDGMENT.md`](./AI_PRODUCT_JUDGMENT.md) | The four hardest AI product decisions and why I made them this way |
+| [`OUTCOME_MODEL.md`](./OUTCOME_MODEL.md) | How value is measured — metrics, instrumentation, success criteria |
+| [`PORTFOLIO_AUDIT.md`](./PORTFOLIO_AUDIT.md) | Honest evaluation of what's complete and what's missing |
+
+Then navigate the numbered sections (`01-Vision/` through `19-Future-Vision/`) in order for the full strategy.
+
+---
+
 ## The Problem: Product Signal Collapse
 
 Modern product managers are drowning in disconnected signals. The average PM monitors 15+ sources simultaneously — Slack threads, Jira tickets, CRM notes, support escalations, call recordings, product analytics, PRDs, executive requests, NPS surveys, and board minutes — with no system to connect, reason across, or synthesize them.
